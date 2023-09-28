@@ -1,0 +1,66 @@
+# Nmap 7.94 scan initiated Thu Sep 28 22:52:42 2023 as: nmap -Pn -sV -sC -oN ./Nmap/nmap.init 10.10.187.60
+Nmap scan report for lunar.eruca.com (10.10.187.60)
+Host is up (0.14s latency).
+Not shown: 987 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH for_Windows_8.1 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 87:4c:ef:4c:bf:9b:eb:32:89:e0:c4:ba:8b:23:84:c5 (RSA)
+|   256 b7:ad:cc:81:7a:7f:72:69:09:3d:98:99:4c:ea:8d:2d (ECDSA)
+|_  256 73:e4:2e:a5:8e:0f:5a:a7:57:27:2f:f3:d2:6c:e4:78 (ED25519)
+53/tcp   open  domain        Simple DNS Plus
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2023-09-28 19:52:59Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: lunar.eruca.com0., Site: Default-First-Site-Name)
+|_ssl-date: 2023-09-28T19:55:32+00:00; -1s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:LUNDC.lunar.eruca.com
+| Not valid before: 2023-02-02T14:48:56
+|_Not valid after:  2024-02-02T14:48:56
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: lunar.eruca.com0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:LUNDC.lunar.eruca.com
+| Not valid before: 2023-02-02T14:48:56
+|_Not valid after:  2024-02-02T14:48:56
+|_ssl-date: 2023-09-28T19:55:32+00:00; -1s from scanner time.
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: lunar.eruca.com0., Site: Default-First-Site-Name)
+|_ssl-date: 2023-09-28T19:55:32+00:00; -1s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:LUNDC.lunar.eruca.com
+| Not valid before: 2023-02-02T14:48:56
+|_Not valid after:  2024-02-02T14:48:56
+3269/tcp open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: lunar.eruca.com0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:LUNDC.lunar.eruca.com
+| Not valid before: 2023-02-02T14:48:56
+|_Not valid after:  2024-02-02T14:48:56
+|_ssl-date: 2023-09-28T19:55:32+00:00; -1s from scanner time.
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=LUNDC.lunar.eruca.com
+| Not valid before: 2023-09-27T19:50:15
+|_Not valid after:  2024-03-28T19:50:15
+| rdp-ntlm-info: 
+|   Target_Name: LUNAR
+|   NetBIOS_Domain_Name: LUNAR
+|   NetBIOS_Computer_Name: LUNDC
+|   DNS_Domain_Name: lunar.eruca.com
+|   DNS_Computer_Name: LUNDC.lunar.eruca.com
+|   DNS_Tree_Name: lunar.eruca.com
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-09-28T19:53:44+00:00
+Service Info: Host: LUNDC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2023-09-28T19:53:46
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 28 22:55:43 2023 -- 1 IP address (1 host up) scanned in 181.19 seconds
