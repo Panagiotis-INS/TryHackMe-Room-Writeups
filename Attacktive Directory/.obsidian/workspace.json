@@ -1,0 +1,165 @@
+{
+  "main": {
+    "id": "0bdd5eb08df48104",
+    "type": "split",
+    "children": [
+      {
+        "id": "6e1b7135bd73018f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "43d316c60ba68ab9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f7e457d2bbb24715",
+    "type": "split",
+    "children": [
+      {
+        "id": "812dbf058a01f578",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ab9aae29c54bbf1c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "26d46c34f01b7a3c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f96c3ae2e5349a5d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "11367c2d4de518b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "191b73ca7c57809c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c4259cf91d3a2042",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "31773948c9c68391",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "474ef08be8722678",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3e344c57e4d88394",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "43d316c60ba68ab9",
+  "lastOpenFiles": [
+    "README.md",
+    "Images/Pasted image 20230928132821.png",
+    "Images/Pasted image 20230928132600.png",
+    "sessionresume_tsZObFoM",
+    "Images/Pasted image 20230928130946.png",
+    "Images/Pasted image 20230928130251.png",
+    "20230928130217_bloodhound.zip",
+    "20230928130217_computers.json",
+    "20230928130217_domains.json",
+    "20230928130217_containers.json",
+    "20230928130217_ous.json",
+    "20230928130217_gpos.json",
+    "20230928130217_groups.json",
+    "20230928130217_users.json",
+    "backup_credentials.txt",
+    "Images/Pasted image 20230928124434.png",
+    "Images/Pasted image 20230928124206.png",
+    "Images/Pasted image 20230928124050.png",
+    "Images/Pasted image 20230928123626.png",
+    "Images/Pasted image 20230928122954.png",
+    "Images/Pasted image 20230928120810.png"
+  ]
+}
