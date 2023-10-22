@@ -1,0 +1,23 @@
+# Nmap 7.94 scan initiated Thu Oct 12 18:58:12 2023 as: nmap -Pn -p- -T4 -oN ./Nmap/nmap_full_tcp -vvvvvvv 10.10.238.49
+Nmap scan report for VULNNET-BC3TCK1 (10.10.238.49)
+Host is up, received user-set (0.10s latency).
+Scanned at 2023-10-12 18:58:12 EEST for 190s
+Not shown: 65521 filtered tcp ports (no-response)
+PORT      STATE SERVICE      REASON
+53/tcp    open  domain       syn-ack
+135/tcp   open  msrpc        syn-ack
+139/tcp   open  netbios-ssn  syn-ack
+445/tcp   open  microsoft-ds syn-ack
+464/tcp   open  kpasswd5     syn-ack
+6379/tcp  open  redis        syn-ack
+9389/tcp  open  adws         syn-ack
+49666/tcp open  unknown      syn-ack
+49668/tcp open  unknown      syn-ack
+49669/tcp open  unknown      syn-ack
+49670/tcp open  unknown      syn-ack
+49673/tcp open  unknown      syn-ack
+49692/tcp open  unknown      syn-ack
+49803/tcp open  unknown      syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Oct 12 19:01:22 2023 -- 1 IP address (1 host up) scanned in 189.46 seconds

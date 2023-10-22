@@ -1,0 +1,22 @@
+# Nmap 7.94 scan initiated Thu Oct 12 18:51:04 2023 as: nmap -Pn -sV -sC -oN ./Nmap/nmap.init 10.10.238.49
+Nmap scan report for 10.10.238.49
+Host is up (0.099s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT    STATE SERVICE       VERSION
+53/tcp  open  domain        Simple DNS Plus
+135/tcp open  msrpc         Microsoft Windows RPC
+139/tcp open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp open  microsoft-ds?
+464/tcp open  kpasswd5?
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2023-10-12T15:51:34
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Oct 12 18:52:09 2023 -- 1 IP address (1 host up) scanned in 65.12 seconds
